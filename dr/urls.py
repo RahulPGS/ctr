@@ -5,7 +5,7 @@ from .views import download
 
 urlpatterns=[
     path('download.php', download, name='download')
-]
+] + static(settings.STATIC_URL, doucument_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL,
                       document_root=settings.MEDIA_ROOT)
