@@ -1,1 +1,1 @@
-web: gunicorn cse.wsgi --log-file -
+web: gunicorn ctr.wsgi --log-file -
